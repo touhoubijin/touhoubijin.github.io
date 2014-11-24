@@ -1,7 +1,17 @@
+# If you do not have OpenSSL installed, update
+# the following line to use "http://" instead
 source 'https://rubygems.org'
 
-require 'json'
-require 'open-uri'
-versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+gem "middleman", "~>3.3.7"
 
-gem 'github-pages', versions['github-pages']
+# Live-reloading plugin
+gem "middleman-livereload", "~> 3.1.0"
+
+# For faster file watcher updates on Windows:
+gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
+
+# Windows does not come with time zone data
+gem "tzinfo-data", platforms: [:mswin, :mingw]
+
+gem 'middleman-deploy', '~> 1.0'
+
