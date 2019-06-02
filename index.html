@@ -4,10 +4,11 @@
     <script type="text/javascript" src="script.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="robots" content="index,follow">
-    <META NAME="Description" CONTENT="東方美人〜世田谷奥沢の生薬を使用した美髪サロン。Hennaもおすすめ！">
-    <META NAME="Keywords" CONTENT="生薬,Henna,ヘナ,毛質,髪質改善,くせ毛,パーマのかかりすぎ,髪の傷み,髪が元気がない,世田谷区,世田谷区奥沢,髪にやさしい,マッサージ,中国,東方美人,ヘアサロン,髪に優しいカラー,理容,美容,マッサージ,癒し,TOUHOUBIJIN,ORIENTAL　BEAUTY,ASIA,JAPAN">
+    <META NAME="Description" CONTENT="東方美人〜世田谷奥沢の生薬を使用した美髪サロン。Hennaもおすすめ！ ">
+		
+    <META NAME="Keywords" CONTENT="髪染めにお悩みの方,白髪でお悩みの方,艶や,つややヘナ,アレルギーフリー,ノンジアミン,ジアミンフリー,ノンケミカル,生薬,Henna,ヘナ,よく染まるヘナ,毛質,髪質改善,くせ毛,パーマのかかりすぎ,ジャガイモカール,痛まないパーマ,髪の傷みが気になる方,薄毛,ボリューム不足,髪が元気がない,世田谷区,世田谷区奥沢,九品仏,髪にやさしい,マッサージ,中国,東方美人,ヘアサロン,髪に優しいカラー,理容,美容,マッサージ,癒し,TOUHOUBIJIN,ORIENTAL　BEAUTY,ASIA,JAPAN">
     <title>東方美人〜美髪サロンへようこそ </title>
-
+		
     <style>
 
 
@@ -69,7 +70,7 @@
 
         $(document).ready(function() {
             if($("#top_ipad").length>=1){
-                $.get('top_txt_ipad.xml?v=3', function(data) {
+                $.get('top_txt_ipad.xml?v=6', function(data) {
                     var html = $(data).find("text").text();
 
                     $('#top_txt_ipad').html(html);
@@ -142,8 +143,8 @@
 
             <div id="top_ipad_image" >
                 <div id="top_txt_ipad"></div>
-
-                <a class="fancybox fancybox.iframe" id="infomation" href="infomation20090210.html?v=3">html</a>
+				<!-- バージョンを変更すること -->
+                <a class="fancybox fancybox.iframe" id="infomation" href="infomation20090210.html?v=4">html</a>
 
 
                 <img src="images/top_ipad_image.png" width="975" height="900" border="0" usemap="#Map" />
