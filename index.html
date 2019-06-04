@@ -8,7 +8,8 @@
 		
     <META NAME="Keywords" CONTENT="髪染めにお悩みの方,白髪でお悩みの方,艶や,つややヘナ,アレルギーフリー,ノンジアミン,ジアミンフリー,ノンケミカル,生薬,Henna,ヘナ,よく染まるヘナ,毛質,髪質改善,くせ毛,パーマのかかりすぎ,ジャガイモカール,痛まないパーマ,髪の傷みが気になる方,薄毛,ボリューム不足,髪が元気がない,世田谷区,世田谷区奥沢,九品仏,髪にやさしい,マッサージ,中国,東方美人,ヘアサロン,髪に優しいカラー,理容,美容,マッサージ,癒し,TOUHOUBIJIN,ORIENTAL　BEAUTY,ASIA,JAPAN">
     <title>東方美人〜美髪サロンへようこそ </title>
-		
+	<!--背景CSS-->	
+	<link href="css/main_contents.css" rel="stylesheet" type="text/css" />		
     <style>
 
 
@@ -64,9 +65,9 @@
     <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=2.0.4"></script>
     <!-- /Add fancyBox -->
 
-    <script type="text/javascript" src="js/libs/swfobject/swfobject.js"></script>
+<!--   フラッシュ判別プログラム
+<script type="text/javascript" src="js/libs/swfobject/swfobject.js"></script>
     <script type="text/javascript">
-
 
         $(document).ready(function() {
             if($("#top_ipad").length>=1){
@@ -75,14 +76,7 @@
 
                     $('#top_txt_ipad').html(html);
                 });
-
-
-
-
-
             }
-
-
 
             $(".fancybox").fancybox({
                         width:450,
@@ -99,23 +93,7 @@
 
             $("#infomation").trigger('click');
 
-
-
-
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         var flashwidth = "100%";
 
@@ -130,8 +108,7 @@
         };
 
         swfobject.embedSWF("index.swf?v=3", "flaContent",flashwidth, "900", "9.0.0", "js/libs/swfobject/expressInstall.swf",flashvars,params);
-    </script>
-
+    </script>-->
 </head>
 <!--<body onload="javascript:popup('infomation20090210.html','info',450,348);">-->
 <body>
@@ -151,7 +128,7 @@
                 <map name="Map" id="Map">
                     <area shape="rect" coords="223,376,326,398" href="salon_menus/index.html" />
                     <area shape="rect" coords="749,377,840,400" href="info/index.html" /><area shape="rect" coords="647,377,738,400" href="speciarite/index.html" /><area shape="rect" coords="544,376,635,399" href="qanda_and_other/index.html" /><area shape="rect" coords="444,376,535,399" href="hennna/index.html" /><area shape="rect" coords="335,377,439,400" href="progress/index.html" />
-                    <area shape="rect" coords="128,376,219,399" href="salon_info/salon.html" />
+                    <area shape="rect" coords="128,376,219,399" href="salon_info/index.html" />
                 </map>
             </div>
         </div>
