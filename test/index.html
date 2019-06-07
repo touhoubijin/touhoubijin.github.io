@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+    <script type="text/javascript" src="script.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index,follow">
+    <META NAME="Description" CONTENT="東方美人〜世田谷奥沢の生薬を使用した美髪サロン。Hennaもおすすめ！ ">
+		
+    <META NAME="Keywords" CONTENT="髪染めにお悩みの方,白髪でお悩みの方,艶や,つややヘナ,アレルギーフリー,ノンジアミン,ジアミンフリー,ノンケミカル,生薬,Henna,ヘナ,よく染まるヘナ,毛質,髪質改善,くせ毛,パーマのかかりすぎ,ジャガイモカール,痛まないパーマ,髪の傷みが気になる方,薄毛,ボリューム不足,髪が元気がない,世田谷区,世田谷区奥沢,九品仏,髪にやさしい,マッサージ,中国,東方美人,ヘアサロン,髪に優しいカラー,理容,美容,マッサージ,癒し,TOUHOUBIJIN,ORIENTAL　BEAUTY,ASIA,JAPAN">
+    <title>東方美人〜美髪サロンへようこそ </title>
+	<!--背景CSS-->	
+	<link href="css/main_contents.css" rel="stylesheet" type="text/css" />		
+    <style>
+
+
+        body{
+            margin:0;
+            padding:0;
+            background-color: #FFD6B3;
+        }
+        #top_ipad{
+            width:975px;
+            margin:0 auto;
+            padding:0 0;
+        }
+        #top_ipad_image{
+            position:relative;
+            top:0;
+            left:0;
+        }
+        #infomation{
+            display:block;
+            visibility:hidden;
+            position:absolute;
+            top:0;
+
+            height:0;
+
+        }
+        #top_txt_ipad{
+	position: absolute;
+	top: 428px;
+	left: 447px;
+	width: 380px;
+	height: 285px;
+	overflow: auto;
+	text-align: left;
+	font-size: 12px;
+        }
+
+    </style>
+
+    <script type="text/javascript" src="js/libs/jquery-1.7.1.min.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.0.4" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.0.4"></script>
+
+    <!-- Optionaly add button and/or thumbnail helpers -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=2.0.4" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=2.0.4"></script>
+
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=2.0.4" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=2.0.4"></script>
+    <!-- /Add fancyBox -->
+
+<!--フラッシュ停止
+<script type="text/javascript" src="js/libs/swfobject/swfobject.js"></script>-->
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            if($("#top_ipad").length>=1){
+                $.get('top_txt_ipad.xml?v=6', function(data) {
+                    var html = $(data).find("text").text();
+
+                    $('#top_txt_ipad').html(html);
+                });
+            }
+
+            $(".fancybox").fancybox({
+                        width:450,
+                        height:348,
+                        helpers: {
+
+                            overlay : {
+                                opacity: 0.1,
+                            }
+                        }
+
+                    }
+            );
+
+            $("#infomation").trigger('click');
+
+        });
+
+        var flashwidth = "100%";
+
+        var ua = navigator.userAgent;
+        if (ua.match(/Chrome\/([\.\d]+)/)) {
+            //chromeの縦スクロールバーが消える現象を回避
+            flashwidth = "99%";
+        }
+        var flashvars = {};
+        var params = {
+            "wmode": "transparent"
+        };
+
+        swfobject.embedSWF("index.swf?v=3", "flaContent",flashwidth, "900", "9.0.0", "js/libs/swfobject/expressInstall.swf",flashvars,params);
+    </script>
+
+</head>
+<!--<body onload="javascript:popup('infomation20090210.html','info',450,348);">-->
+<body>
+
+
+<div align="center">
+    <div id="flaContent">
+        <div id="top_ipad" >
+
+            <div id="top_ipad_image" >
+                <div id="top_txt_ipad"></div>
+				<!-- バージョンを変更すること -->
+                <a class="fancybox fancybox.iframe" id="infomation" href="infomation20090210.html?v=4">html</a>
+
+
+                <img src="images/top_ipad_image.png" width="975" height="905" border="0" usemap="#Map" />
+                <map name="Map" id="Map">
+                    <area shape="rect" coords="223,376,326,398" href="salon_menus/index.html" />
+                    <area shape="rect" coords="749,377,840,400" href="info/index.html" /><area shape="rect" coords="647,377,738,400" href="speciarite/index.html" /><area shape="rect" coords="544,376,635,399" href="qanda_and_other/index.html" /><area shape="rect" coords="444,376,535,399" href="hennna/index.html" /><area shape="rect" coords="335,377,439,400" href="progress/index.html" />
+                    <area shape="rect" coords="128,376,219,399" href="salon_info/index.html" />
+                </map>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-6842065-1");
+        pageTracker._trackPageview();
+    } catch(err) {}</script>
+</body>
+</html>
