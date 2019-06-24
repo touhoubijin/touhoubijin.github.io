@@ -20,14 +20,14 @@ body,p,li,h2{
 }
 /* font size */
 p,li,a{
-	font-size: 12px;
+	font-size: 14px;
 	color:#333333;
 	text-decoration: none;
 }
 
 
 .p2{
-	font-size: 12px;
+	font-size: 18px;
 	color:#990000;
 	text-decoration: none;
 }
@@ -110,17 +110,16 @@ p.title_sub_Contents{
 	-------------------------------- */
 
 #mainFlame{
-	width: 750px;
+	width: 980px;
 	text-align: left;
 	margin: 7px auto 0px auto;
 
 }
 
-
 #sideMenu{
 	float: left;
-	width: 163px;
-	margin-top: 25px;
+	width: 165px;
+	margin-top: 25px
 	margin-right: 0px;
 	margin-reft: 0px;
 }
