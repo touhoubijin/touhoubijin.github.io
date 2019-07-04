@@ -11,35 +11,29 @@ body {
 	background-repeat: repeat-y;
 	background-position: center;
 }
-/* font family */
-body,p,li,h2{
-	font-size:12pt;
-	font-family:MS PGOTHIC, Osaka;
+/* font family  size  */
+
+p,li,h2,a{
+	font-size:10pt;
+	/* font-family:MS PGOTHIC, Osaka;*/
 	line-height:120%;
-	color:#000000;
-}
-/* font size */
-p,li,a{
-	font-size: 14px;
-	color:#333333;
+	color:#3333333;
 	text-decoration: none;
+	text-indent: 0.5em;
+	line-height: 1.5em;	
+}
+.red {	
+	font-weight: bold;
+	color:#9F1010;
 }
 
-
-.p2{
-	font-size: 18px;
-	color:#990000;
-	text-decoration: none;
-}
 
 a:hover  {
-	 color: #000099;
+	 color: #850CA3;
 	 background-color:#DEEFFF;
 }
 
-.red {
-	color: #9F1010;
-}
+
 
 .pink {
 	color:#FF6699;
@@ -49,13 +43,59 @@ table.bordr_table{
 	border:1px solid #AF3838;
 }
 
-h1{
-	font-size: 14px;
-	color:#000000;
+/* サロンメニューの表示設定 */
+
+h1{font-size: 18px;
+	color:#333333;
+}
+
+td{ }
+/*つややヘナ */
+.henna_background{background-color:olivedrab}
+.henna_background2{background-color:darkkhaki}
+.henna_background3{background-color:#B1DA86}
+.h1_henna{	
 	text-indent: 1em;
 	line-height: 1.5em;	
 }
-h2{font-size: 14px;}
+
+/*ナチュラルハーブカラー */
+.naatural_hearb_background{background-color:#898D07}
+.h1_naatural_hearb{
+	color:#898D07;
+	text-indent: 1em;
+	line-height: 1.5em;	
+}
+
+/*エコカール */
+.eco_curl_background{background-color:burlywood;}
+.h1_eco_curl{
+	text-indent: 1em;
+	line-height: 1.5em;	
+}
+
+/*炭酸泉 */
+.spa_background{background-color:#99C3E9;}
+.h1_spa{
+	text-indent: 1em;
+	line-height: 1.5em;	
+}
+/*以下全て */
+.other_background{background-color:#F4A4D4}
+.other_background2{background-color:#F7C8EE}
+.other_background3{background-color:antiquewhite}
+.h1_other{
+
+	text-indent: 1em;
+	line-height: 1.5em;	
+}
+
+.price{
+	font-size: 18px;
+	color:#663300;
+	text-decoration: none;
+}
+
 h3{font-size: 12px;}
 
 li{line-height: 1.5em;}
@@ -86,10 +126,6 @@ li{line-height: 1.5em;}
 /* 
 	Pスタイル各種
  */
-p{
-	text-indent: 0.5em;
-	line-height: 1.5em;	
-}
 
 p.title_Contents_Top{
 	color:#000000;	
@@ -170,11 +206,6 @@ border-style:none;
 	padding: 0px 0px 0px 0px;	
 }
 
-#sideMenu.li.maintop {
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;	
-}
-
 #sideMenu li {
         上  右　下　左　
 	margin: 1px 0px 0px 0px;
@@ -182,7 +213,6 @@ border-style:none;
 	border-left: 3px solid #ADDEED;
 
 }
-
 
 #sideMenu li a {
 	background-color:#E0F4FA;
@@ -209,8 +239,6 @@ border-style:none;
 
 }
 */
-
-
 /*--------------------------------
 	ファイル内BOX
 	内部で囲みがある際に使用
@@ -229,7 +257,6 @@ div.box_title{
 	padding:5px;
 }
 
-
 div.box{
 	padding:1px;
 	/*background-color:#DFF3F9;*/
@@ -238,7 +265,6 @@ div.box{
 	border-bottom: 1px solid #FFFFFF;
 	border-right: 1px solid #FFFFFF;
 }
-
 
 div#contents_menu_top{
 	width:704px;
@@ -276,7 +302,6 @@ div#banner{
 	text-align:right
 }
 
-
 /* TOPページ  */
 div#top_block_manu{
 	width:530px;
@@ -309,21 +334,11 @@ div.top_block_manu_sub{
 	border-left-style: none;
 }
 
-
-
-
-
-
 a img{
 	padding:0;
 	margin:0 auto;
 	display:block;
 }
-
-
-
-
-
 
 
 
