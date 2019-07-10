@@ -76,10 +76,19 @@ td{ }
 
 /*炭酸泉 */
 .spa_background{background-color:#99C3E9;}
+.spa_background2{background-color:lightblue;}
 .h1_spa{
 	text-indent: 1em;
 	line-height: 1.5em;	
 }
+
+/*コアトリートメント*/
+.core_background{background-color:gold;}
+.h1_core{
+	text-indent: 1em;
+	line-height: 1.5em;	
+}
+
 /*以下全て */
 .other_background{background-color:#F4A4D4}
 .other_background2{background-color:#F7C8EE}
@@ -189,6 +198,9 @@ border-style:none;
 	/*visibility: hidden;*/
 }
 
+ul, li, ol {
+list-style: none;
+}
 
 ul.gallery{
 	padding:0px;
@@ -209,7 +221,136 @@ ul.gallery li{
 	
 }
 
-/*サイドメニュー*/
+
+ul, menu, dir {
+display: block;
+list-style-type: disc;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
+}
+
+
+
+.box9d {
+width: 600px;
+margin: 0 auto;
+text-align: reft;
+}
+
+
+/*背景が黒のモーダルウィンドウの設定*/
+/*div.modal {
+position: relative;
+display:none;
+z-index:9999;
+}
+div.modal .pr_box {
+width:500px;
+height:auto;
+margin:auto;
+box-shadow:0px 0px 12px rgba(0,0,0,0.4);
+padding:40px;
+background:#FFFFFF;
+}
+.pr_box img:hover {
+filter: alpha(opacity=50);
+-webkit-opacity:0.50;
+-moz-opacity:0.50;
+-ms-opacity:0.50;
+-o-opacity:0.50;
+opacity:0.50;
+}
+.close_modal{
+display: block;
+width: 180px;
+line-height:50px;
+display: inline-table;
+-webkit-transition: all 200ms linear;
+-moz-transition: all 200ms linear;
+-o-transition: all 200ms linear;
+transition: all 200ms linear;
+-webkit-transition: all 300ms linear;
+-moz-transition: all 300ms linear;
+-o-transition: all 300ms linear;
+transition: all 300ms linear;
+color: #fff;
+border: 2px solid #018ad1;
+background: #018ad1;
+*display: inline;
+*zoom: 1;
+}
+.close_modal:hover {
+text-decoration: none;
+display: inline-table;
+color: #018ad1;
+border: 2px solid #018ad1;
+background: #fff;
+}
+.close_modal_no{
+display: block;
+width: 180px;
+line-height:50px;
+display: inline-table;
+-webkit-transition: all 200ms linear;
+-moz-transition: all 200ms linear;
+-o-transition: all 200ms linear;
+transition: all 200ms linear;
+-webkit-transition: all 300ms linear;
+-moz-transition: all 300ms linear;
+-o-transition: all 300ms linear;
+transition: all 300ms linear;
+color: #fff;
+border: 2px solid #60cfff;
+background: #60cfff;
+*display: inline;
+*zoom: 1;
+}
+.close_modal_no:hover {
+text-decoration: none;
+display: inline-table;
+color: #018ad1;
+border: 2px solid #60cfff;
+background: #fff;
+	
+}*/
+.modal-overlay {
+    z-index:2; /*デモではheader,footerをz-index:1にしたので それより上げています*/
+    display:none; /*jsでフェードインされるまでdisplay:none*/
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh; /*100vhでビューポートの高さいっぱいになります*/
+    background-color:rgba(0,0,0,.5)} /*これは好きな色・透明度で*/
+a.modal-open:hover {cursor:pointer} /*カーソルをポインタに*/
+
+.modal-content {
+    position:fixed;
+    display:none; /*jsでフェードインされるまでdisplay:none*/
+    z-index:3; /*オーバーレイより上に*/
+    margin:10px;
+    padding:15px;
+    border-radius:20px;
+    background:#fff}
+.modal-content img {width:auto;max-height:75vh}
+.modal-content h1 {font-size:120%; margin-bottom:0.5em}
+.modal-content p {max-width:565px; text-align:left}
+a.modal-close { /*クローズボタンは何でも好きなスタイルでOK*/
+    position:absolute;
+    top:0;
+    right:10px;
+    color:#b29c33;
+    font-size:35px;
+    line-height:1;
+    font-weight:bold;
+    text-decoration:none}
+a.modal-close:hover {cursor:pointer} /*カーソルをポインタに*/
+
+
+/*以前固定していたサイドメニュー*/
 /*
 
 #sideMenu ul {
@@ -358,7 +499,6 @@ a img{
 	margin:0 auto;
 	display:block;
 }
-
 
 
 
