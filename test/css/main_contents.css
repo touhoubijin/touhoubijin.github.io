@@ -109,6 +109,8 @@ h3{font-size: 12px;}
 
 li{line-height: 1.5em;}
 
+
+
 /*
 	テーブル設定各種
 */
@@ -210,14 +212,14 @@ ul.gallery{
 
 ul.gallery li{
 	float:left;
-	margin: 5px 6px 5px 6px;
+	margin: 10px 30px 20px 6px;
 	list-style-type: none;
-	padding:2px;
+	padding:0px;
 
 	font-size:10px;
 	text-align:center;
 	color:#FFF;
-	border:1px solid #c6c6c6;
+	border:1px solid #FCD3A6;
 	
 }
 
