@@ -69,7 +69,7 @@
 
         $(document).ready(function() {
             if($("#top_ipad").length>=1){
-                $.get('top_txt_ipad.xml?v=6', function(data) {
+                $.get('top_txt_ipad.xml?v=7', function(data) {
                     var html = $(data).find("text").text();
 
                     $('#top_txt_ipad').html(html);
@@ -119,7 +119,7 @@
             <div id="top_ipad_image" >
                 <div id="top_txt_ipad"></div>
 				<!-- バージョンを変更すること -->
-                <a class="fancybox fancybox.iframe" id="infomation" href="infomation20090210.html?v=4">html</a>
+                <!-- <a class="fancybox fancybox.iframe" id="infomation" href="infomation20090210.html?v=4">html</a>-->
                 <img src="images/top_ipad_image.png" width="980" height="930" border="0" usemap="#Map" />
                 <map name="Map" id="Map"><area shape="rect" coords="153,289,260,335" href="salon_menus/index.html" />
                     <area shape="rect" coords="863,289,958,334" href="info/index.html" />
