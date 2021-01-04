@@ -69,7 +69,7 @@
 
         $(document).ready(function() {
             if($("#top_ipad").length>=1){
-                $.get('top_txt_ipad.xml?v=6', function(data) {
+                $.get('top_txt_ipad.xml?v=10', function(data) {
                     var html = $(data).find("text").text();
 
                     $('#top_txt_ipad').html(html);
@@ -109,9 +109,7 @@
     </script>
 
 </head>
-<!--<body onload="javascript:popup('infomation20090210.html','info',450,348);">-->
-<body>
-
+<body onload="javascript:popup('infomation20090210.html','info',450,348);">
 
 <div align="center">
    <!-- <div id="flaContent">-->
